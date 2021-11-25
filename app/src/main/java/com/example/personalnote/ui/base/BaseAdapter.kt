@@ -8,6 +8,8 @@ import androidx.databinding.library.baseAdapters.BR
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 
+
+
 abstract class BaseAdapter<T>(
     private var items: List<T>,
     private val listener: BaseInteractionListener
