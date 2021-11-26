@@ -14,15 +14,14 @@
 
         <TextView
             android:id="@+id/title"
-            android:layout_width="match_parent"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:gravity="center"
+            android:gravity="center|left"
             android:text="Home"
-            android:textSize="20sp"
             android:textColor="@color/light_green"
+            android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -43,7 +42,11 @@
             android:layout_height="0dp"
             android:orientation="vertical"
             android:layout_margin="16dp"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:shadowColor="@color/light_green"
+            android:outlineAmbientShadowColor="@color/light_green"
+            android:outlineSpotShadowColor="@color/light_green"
+            app:spanCount="2"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

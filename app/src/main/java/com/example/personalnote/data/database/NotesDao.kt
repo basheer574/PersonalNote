@@ -22,5 +22,4 @@ interface NotesDao {
 
     @Query("SELECT * FROM Notes_table WHERE category IN (:category) ")
     fun getFilteredNotes(category: String) : Flow<List<Note>>
-
 }
